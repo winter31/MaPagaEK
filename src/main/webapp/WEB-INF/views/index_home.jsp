@@ -11,6 +11,8 @@
 
     <title>Welcome~! Eric's Page</title>
     <!-- Bootstrap Core CSS -->
+    <link href="resources/navibar/assets/css/main.css" rel="stylesheet">
+    
     <link href="resources/pageDesign/pageDesign1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="resources/pageDesign/pageDesign1/css/stylish-portfolio.css" rel="stylesheet">
@@ -19,32 +21,45 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 
+
 <body>
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <img src="resources/image/me.jpg" width="50px;" height="50px;" style="float: left; padding:3px; margin-right: 3px;" ><a href="#top" style="padding: 2px;" onclick=$("#menu-close").click();>Eric Gilseob Kim</a>
-            </li>
-            <li>
-                <a href="#top" style="font-size: 18px;" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" style="font-size: 18px;" onclick=$("#menu-close").click();>About Eric Kim</a>
-            </li>
-            <li>
-                <a href="#services" style="font-size: 18px;" onclick=$("#menu-close").click();>Board</a>
-            </li>
-            <li>
-                <a href="#portfolio" style="font-size: 18px;" onclick=$("#menu-close").click();>Photo Board</a>
-            </li>
-            <li>
-                <a href="#contact" style="font-size: 18px;" onclick=$("#menu-close").click();>Contact</a>
-            </li>
-        </ul>
-    </nav>
+    <div id="header">
+				<a id="menu-close" href="#" class="btn btn-lg toggle"><i class="fa fa-times pull-right btn-gray" style="font-size: 30px;"></i></a>
+				<div class="top">
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="resources/image/me.jpg" alt="" /></span>
+							<h1 id="title">Eric Gilseob Kim</h1>
+							<p>Soft Engineer</p>
+						</div>
+					<!-- Nav -->
+					
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home" style="font-size: 18px;" onclick=$("#menu-close").click();>Intro</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user" style="font-size: 18px;" onclick=$("#menu-close").click();>About Me</span></a></li>
+								<li><a href="#photo" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th" style="font-size: 18px;" onclick=$("#menu-close").click();>Photo Board</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope" style="font-size: 18px;" onclick=$("#menu-close").click();>Contact</span></a></li>
+								
+							</ul>
+								
+						</nav>
+				</div>
+				<div class="bottom">
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+				</div>
+			</div>
+    </nav> 
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
@@ -66,7 +81,7 @@
             <!-- /.row -->
         </div>
         <!-- /.container -->
-    </section>
+    </section> 
 
     <!-- Services -->
     <section id="services" class="services bg-primary">
@@ -131,8 +146,8 @@
             <h1>Vertically Centered Text</h1>
         </div>
     </aside>
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <!-- Portfolio --> <!-- 가운데 정렬해야함. -->
+    <section id="photo" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
