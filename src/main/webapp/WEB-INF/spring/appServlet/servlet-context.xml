@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<annotation-driven />
+
+	<resources mapping="/resources/**" location="/resources/" />
+	<!-- <resources mapping="/images/**" location="/resources/images/" /> -->
+	
+	<beans:bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+
+	<context:component-scan base-package="Eric.Gilseob.Kim" />
+
+	<!-- <beans:bean id="loginInterceptor"
+		class="com.itmaster.tanoshi.interceptor.loginInterceptor" /> -->
+	<!-- <interceptors>
+		<interceptor>
+			로그인 여부를 확인하는 인터셉터
+			<mapping path="/recommend/" />
+			
+			<mapping path="/member/ShowProfile" />
+			위의 경로들은 다음의 인터셉터를 경유한다
+			인터셉터에 걸리면 해당 페이지 요청한다면 로그인 화면으로 강제이동
+			<beans:ref bean="loginInterceptor" />
+		</interceptor>
+		<interceptor>
+			<mapping path="/board/" />
+			<beans:ref bean="houseInterceptor" />
+		</interceptor>
+		</interceptors> -->
+</beans:beans>
