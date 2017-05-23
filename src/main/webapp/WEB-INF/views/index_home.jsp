@@ -157,7 +157,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="resources/image/1.jpg" style="width: 450px; height: 350px;">
+                                    <img class="img-portfolio img-responsive" src="resources/image/112.jpg" style="width: 450px; height: 350px;">
                                 </a>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="resources/image/4.jpg" style="width: 450px; height: 350px;">
+                                    <img class="img-portfolio img-responsive" src="resources/image/123.jpg" style="width: 450px; height: 350px;">
                                 </a>
                             </div>
                         </div>
