@@ -1,4 +1,4 @@
-package Eric.Gilseob.Kim;
+package Eric.Gilseob.Kim.Controller;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the application home page.
  */
 @Controller
-public class HomeController {
+public class BoardController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home() {
-		return "index_home";
+	@RequestMapping(value = "board/board_index", method = RequestMethod.GET)
+	public String board_index() {
+		return "board/board_index";
 	}
 	
 }
