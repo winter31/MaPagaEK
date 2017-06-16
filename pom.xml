@@ -44,13 +44,33 @@
 			<version>11.2.0.3</version>
 		</dependency>
 		
-<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml</artifactId>
-    <version>3.16</version>
-</dependency>
-
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>3.16</version>
+		</dependency>
+		
+ 		<!-- ImageMagick for Java --> 
+ 		<dependency> 
+ 			<groupId>org.im4java</groupId> 
+ 			<artifactId>im4java</artifactId> 
+ 			<version>1.4.0</version> 
+ 		</dependency> 
+ 		<!-- Java/OpenCV --> 
+ 		<dependency> 
+ 			<groupId>org.bytedeco</groupId> 
+ 			<artifactId>javacv</artifactId> 
+ 			<version>0.8</version> 
+ 		</dependency> 
+		
+		<!-- java/ocr -->
+		<dependency>
+	    <groupId>com.asprise.ocr</groupId>
+	    <artifactId>java-ocr-api</artifactId>
+	    <version>[15,)</version>
+		</dependency>
+		
 
 		<!-- spring-jdbc 추가 -->
 		<dependency>
