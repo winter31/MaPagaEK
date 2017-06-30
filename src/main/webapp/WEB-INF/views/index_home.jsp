@@ -39,7 +39,7 @@
 					
 						<nav id="nav">
 							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home" style="font-size: 18px;" onclick=$("#menu-close").click();>Intro</span></a></li>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home" style="font-size: 18px;" onclick=$("#menu-close").click();>Home</span></a></li>
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user" style="font-size: 18px;" onclick=$("#menu-close").click();>About Me</span></a></li>
 								<li><a href="${pageContext.request.contextPath}/board/board_index" id="board-link" class ="skel-layers-ignorehref"><span class="icon fa-th" style="font-size: 18px;" onclick="location.href='${pageContext.request.contextPath}/board/board_index';">Board</span></a>
 								<li><a href="${pageContext.request.contextPath}/game/AiGame" id="board-link" class ="skel-layers-ignorehref"><span class="icon fa-th" style="font-size: 18px;" onclick="location.href='${pageContext.request.contextPath}/game/AiGame';">Game</span></a>
@@ -60,7 +60,7 @@
 							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 				</div>
-			</div>1
+			</div>
     </nav> 
     <!-- Header -->
     <header id="top" class="header">
@@ -72,12 +72,13 @@
         </div>
     </header>
     <!-- About -->
-    <section id="about" class="about">
+    <section id="about" class="about" style="padding: 0; margin-top: 0px; margin-bottom: 10px;">
         <div class="container">
-            <div class="row">
+            <div class="row" style="height: 340px;">
                 <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <h2>Don't Give up. Don't give in. live your dream.</h2><!-- 
+                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p> -->
+                    <iframe width="500" height="290" src="https://www.youtube.com/embed/ZOy0YgUDwDg" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             <!-- /.row -->
@@ -90,19 +91,19 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-rg-8 col-lg-offset-1">
-                    <h2>About Eric Kim</h2>
+                    <h2>About My pages</h2>
                     <hr class="small text-center">
                     <div class="row pull-right">
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                <i class="fa fa-user fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>Introduce</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>I was a leader and will be a leader. Just trust my potential.</p>
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -110,12 +111,12 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                <i class="fa fa-users fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>Movements</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>Keep moving, My life is not done. Just take what you wanna do.</p>
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -126,9 +127,22 @@
                                 <i class="fa fa-flask fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>-----_-----???</strong>
+                                    <strong>Technique</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>What technique can i do? Nothing is impossible to a willing heart.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Game</strong>
+                                </h4>
+                                <p>Practice Simple Game. Enjoy it.( On construction )</p>
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -145,7 +159,7 @@
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
+            <h1>Now rationally, the future is ideal.</h1>
         </div>
     </aside>
     <!-- Portfolio --> <!-- 가운데 정렬해야함. -->
@@ -158,35 +172,35 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="resources/image/112.jpg" style="width: 450px; height: 350px;">
+                                <a href="board/photoBoard">
+                                    <img class="img-portfolio img-responsive" src="resources/image/1.jpg" style="width: 450px; height: 350px;">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
+                                <a href="board/photoBoard">
                                     <img class="img-portfolio img-responsive" src="resources/image/2.jpg" style="width: 450px; height: 350px;">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
+                                <a href="board/photoBoard">
                                     <img class="img-portfolio img-responsive" src="resources/image/3.jpg" style="width: 450px; height: 350px;">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
+                                <a href="board/photoBoard">
                                     <img class="img-portfolio img-responsive" src="resources/image/4.jpg" style="width: 450px; height: 350px;">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">Go to Photo Board</a>
+                    <a href="board/photoBoard" class="btn btn-dark">Go to Photo Board</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -200,20 +214,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
+                    <!-- <h3>The buttons below are impossible to resist.</h3>
                     <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
                 </div>
             </div>
         </div>
     </aside>
     <!-- Map -->
-    <!--좌표 따로 받아서 만들기 // 지금은 센프란시스코 트위터 회사로 되어 있음.  -->
     <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6350.30602811431!2d127.00203145509165!3d37.267798498801554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b431ebce78f23%3A0x7ddf31ebf9049018!2z64yA7ZWc66-86rWtIOqyveq4sOuPhCDsiJjsm5Dsi5wg7YyU64us6rWsIOunpOyCsOuPmSA2OS0x!5e0!3m2!1sko!2sjp!4v1498718876387" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        <small>																																				
+            <a href="https://www.google.co.jp/maps/place/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%EA%B2%BD%EA%B8%B0%EB%8F%84+%EC%88%98%EC%9B%90%EC%8B%9C+%ED%8C%94%EB%8B%AC%EA%B5%AC+%EB%A7%A4%EC%82%B0%EB%8F%99+69-1/@37.2673226,126.9991246,17z/data=!4m13!1m7!3m6!1s0x357b430a20764611:0xf1373002ee5db4c9!2z64yA7ZWc66-86rWtIOqyveq4sOuPhCDsiJjsm5Dsi5w!3b1!8m2!3d37.2635727!4d127.0286009!3m4!1s0x357b431ebce78f23:0x7ddf31ebf9049018!8m2!3d37.2673226!4d127.0013133?hl=ko"></a>
         </small>
     </section>
     <!-- Footer -->
@@ -221,26 +234,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Eric Kim / Gilseob Kim / キム・ギルソプ</strong>
+                    <h4><strong>&nbsp;&nbsp;&nbsp;Eric Kim / Gilseob Kim / キム・ギルソプ</strong>
+                    <br>
+                    <br>
+               
+                 <!--    <ul class="list-unstyled"> -->
+                        <!-- <li> --><i class="fa fa-phone fa-fw"></i>82)01-1231-1456 <!-- </li> -->
+                        <!-- <li> -->&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:seob31@gmail.com">seob31@gmail.com</a>
+                <!--         </li>
+                    </ul> -->
                     </h4>
-                    <p>
-                        <br></p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i>82)01-1231-1456 </li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:seob31@gmail.com">seob31@gmail.com</a>
-                        </li>
-                    </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i>----</a>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i>http://www.facebook.com</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i>없음</a>
                         </li>
                     </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website</p>
+                    <!-- <hr class="small">
+                    <p class="text-muted"></p> -->
                 </div>
             </div>
         </div>

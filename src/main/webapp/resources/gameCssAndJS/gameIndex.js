@@ -1,5 +1,5 @@
 // constants
-const WEB_WORKER_URL = '../resources/gameCssAndJS/gameWorker.js';
+const WEB_WORKER_URL = '${pageContext.request.contextPath}/resources/gameCssAndJS/gameWorker.js';
 const BLURBS = {
   'start': {
     header: 'Get Ready',
