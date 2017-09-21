@@ -15,9 +15,10 @@ public class BoardController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
 	
-	@RequestMapping(value = "board/board_index", method = RequestMethod.GET)
-	public String board_index() {
-		return "board/board_index";
+	@RequestMapping(value = "board/camera", method = RequestMethod.GET)
+	public String camera_index() {
+		
+		return "board/camera";
 	}
 
 	@RequestMapping(value = "board/photoBoard", method = RequestMethod.GET)

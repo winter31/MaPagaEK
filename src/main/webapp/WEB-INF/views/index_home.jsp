@@ -25,10 +25,10 @@
 <body>
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-    <div id="header">
+    <nav id="sidebar-wrapper" >
+    	<div id="header" >
+			<div id="top">
 				<a id="menu-close" href="#" class="btn btn-lg toggle"><i class="fa fa-times pull-right btn-gray" style="font-size: 30px;"></i></a>
-				<div class="top">
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="resources/image/me.jpg" alt="" /></span>
@@ -36,12 +36,11 @@
 							<p>Soft Engineer</p>
 						</div>
 					<!-- Nav -->
-					
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home" style="font-size: 18px;" onclick=$("#menu-close").click();>Home</span></a></li>
+						<nav id="nav" >
+							<ul >
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home" style="font-size: 18px; " onclick=$("#menu-close").click();>Home</span></a></li>
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user" style="font-size: 18px;" onclick=$("#menu-close").click();>About Me</span></a></li>
-								<li><a href="${pageContext.request.contextPath}/board/board_index" id="board-link" class ="skel-layers-ignorehref"><span class="icon fa-th" style="font-size: 18px;" onclick="location.href='${pageContext.request.contextPath}/board/board_index';">Board</span></a>
+								<li><a href="${pageContext.request.contextPath}/board/camera" id="board-link" class ="skel-layers-ignorehref"><span class="icon fa-th" style="font-size: 18px;" onclick="location.href='${pageContext.request.contextPath}/board/camera';">Camera</span></a>
 								<li><a href="${pageContext.request.contextPath}/game/AiGame" id="board-link" class ="skel-layers-ignorehref"><span class="icon fa-th" style="font-size: 18px;" onclick="location.href='${pageContext.request.contextPath}/game/AiGame';">Game</span></a>
 								<li><a href="${pageContext.request.contextPath}/openCV" id="board-link" class ="skel-layers-ignorehref"><span class="icon fa-th" style="font-size: 18px;" onclick="location.href='${pageContext.request.contextPath}/openCV';">openCV</span></a>
 								<li><a href="${pageContext.request.contextPath}/ocr" id="board-link" class ="skel-layers-ignorehref"><span class="icon fa-th" style="font-size: 18px;" onclick="location.href='${pageContext.request.contextPath}/ocr';">OCR</span></a>
@@ -49,7 +48,6 @@
 								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope" style="font-size: 18px;" onclick=$("#menu-close").click();>Contact</span></a></li>
 							</ul>								
 						</nav>
-				</div>
 				<div class="bottom">
 					<!-- Social Icons -->
 						<ul class="icons">
@@ -61,6 +59,7 @@
 						</ul>
 				</div>
 			</div>
+		</div>
     </nav> 
     <!-- Header -->
     <header id="top" class="header">
@@ -104,7 +103,6 @@
                                     <strong>Introduce</strong>
                                 </h4>
                                 <p>I was a leader and will be a leader. Just trust my potential.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -117,7 +115,6 @@
                                     <strong>Movements</strong>
                                 </h4>
                                 <p>Keep moving, My life is not done. Just take what you wanna do.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -130,7 +127,6 @@
                                     <strong>Technique</strong>
                                 </h4>
                                 <p>What technique can i do? Nothing is impossible to a willing heart.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -143,10 +139,12 @@
                                     <strong>Game</strong>
                                 </h4>
                                 <p>Practice Simple Game. Enjoy it.( On construction )</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                     </div>
+                 <span style="margin:auto;">
+   			         <a href="aboutMe" class="btn btn-light">Learn More</a>
+                 </span>
                     <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->

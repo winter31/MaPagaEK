@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html >
-<html>
+<html style="background-color: rgba(66, 209, 244, 0.3);">
 <head>
     <meta charset="utf-8">
 
@@ -53,7 +53,7 @@
 </script>
 
 </head>
-<body>
+<body >
 	<!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -70,7 +70,7 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="${pageContext.request.contextPath}" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home" style="font-size: 18px;" onclick="location.href='${pageContext.request.contextPath}">Home</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user" style="font-size: 18px;" onclick=$("#menu-close").click();>About Me</span></a></li>
+								<li><a href="${pageContext.request.contextPath}/aboutMe" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user" style="font-size: 18px;" onclick=$("#menu-close").click();>About Me</span></a></li>
 								<li><a href="${pageContext.request.contextPath}/board/board_index" id="board-link" class ="skel-layers-ignorehref"><span class="icon fa-th" style="font-size: 18px;" onclick="location.href='${pageContext.request.contextPath}/board/board_index';">Board</span></a>
 								<li><a href="${pageContext.request.contextPath}/game/AiGame" id="board-link" class ="skel-layers-ignorehref"><span class="icon fa-th" style="font-size: 18px;" onclick="location.href='${pageContext.request.contextPath}/game/AiGame';">Game</span></a>
 								<li><a href="${pageContext.request.contextPath}/openCV" id="board-link" class ="skel-layers-ignorehref"><span class="icon fa-th" style="font-size: 18px;" onclick="location.href='${pageContext.request.contextPath}/openCV';">openCV</span></a>
@@ -93,11 +93,11 @@
 			</div>
     </nav> 
     
-	<div class="text-center">
+	<div class="text-center" >
             <h1>OCR - TEST / Ver : English</h1>
             <br>
     </div>
-	<div class="row text-center" style="position: absolute; top: 150px; left: 200px;" >
+	<div class="row text-center" style="position: absolute; top: 150px; left: 200px; " >
 			<div id="holder" class="col-md-5">
 			<img onclick="$('#uploadFile').trigger('click');" src="${pageContext.request.contextPath}/getPhoto?file_id=${photo}" onerror="javascript:this.src='${pageContext.request.contextPath}/resources/pageDesign/pageDesign1/img/add_image.png'" width="40%" height="40%" style="width: 500px; height: 500px; border: solid 3px #333" >
 			</div>

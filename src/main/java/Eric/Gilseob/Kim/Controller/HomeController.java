@@ -30,14 +30,17 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	private final String ocrPath = "C:/Users/kita/git/MaPageEK/src/main/webapp/resources/OcrFile";
+	private final String ocrPath = "C:/Users/GILSEOB/git/MaPageEK/src/main/webapp/resources/OcrFile";
 	
 	String filename;
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home() {
-
 		return "index_home";
+	}
+	@RequestMapping(value ="aboutMe", method=RequestMethod.GET)
+	public String aboutMe(){
+		return "aboutMe";
 	}
 	
 /*	@RequestMapping(value = "/openCV", method = RequestMethod.GET)
