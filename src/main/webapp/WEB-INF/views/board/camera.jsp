@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Welcome~! Eric's Page</title>
-         <!-- jQuery -->
+    <!-- jQuery -->
     <script src="${pageContext.request.contextPath }/resources/pageDesign/pageDesign1/js/jquery.js"></script>
     <!-- Bootstrap Core CSS -->
     <link href="${pageContext.request.contextPath }/resources/navibar/assets/css/main.css" rel="stylesheet">

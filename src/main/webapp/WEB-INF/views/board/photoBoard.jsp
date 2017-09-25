@@ -61,7 +61,7 @@
 			</div>
     </nav> 
     
-    
+    No database, with AWS
     
     
     <script src="${pageContext.request.contextPath}/resources/pageDesign/pageDesign1/js/jquery.js"></script>
