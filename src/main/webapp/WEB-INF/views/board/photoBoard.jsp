@@ -61,7 +61,8 @@
 			</div>
     </nav> 
     
-    No database, with AWS
+    
+   AWS-Window virtual screen Page
     
     
     <script src="${pageContext.request.contextPath}/resources/pageDesign/pageDesign1/js/jquery.js"></script>
