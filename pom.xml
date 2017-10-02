@@ -37,6 +37,13 @@
 			<version>2.0.235</version>
 		</dependency>
 
+		<!-- AWS -->
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk</artifactId>
+			<version>1.10.12</version>
+		</dependency>
+
 		<!-- ojdbc6 -->
 		<dependency>
 			<groupId>com.oracle</groupId>
