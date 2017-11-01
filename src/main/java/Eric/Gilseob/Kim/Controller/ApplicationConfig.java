@@ -1,8 +1,5 @@
 package Eric.Gilseob.Kim.Controller;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -18,17 +15,16 @@ import com.amazonaws.services.elasticmapreduce.model.Application;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3Client;
 
+import Eric.Gilseob.Kim.Service.CallAWSAccessKey;
+
 @Configuration
 @ComponentScan(basePackageClasses = Application.class, excludeFilters = @Filter({Controller.class, Configuration.class}))
 public class ApplicationConfig {
-
-   @Value("${aws_access_key_id}")
-   private String awsId;
 	
-   Logger log = LoggerFactory.getLogger(ApplicationConfig.class);
-   
-   @Value("${aws_secret_access_key}")
-   private String awsKey;
+	private CallAWSAccessKey CAAK = new CallAWSAccessKey();
+	String AWSid = CAAK.getAccessKey()[0];
+	String AWSPW = CAAK.getAccessKey()[1];
+	String AWSFileName = "PhotoBoard";
    
    @Bean
    public static PropertyPlaceholderConfigurer propertyPlaceholderConfigurer() {
@@ -41,7 +37,7 @@ public class ApplicationConfig {
 	
    @Bean
    public AWSCredentials credential() {
-   	return new BasicAWSCredentials(awsId, awsKey);
+   	return new BasicAWSCredentials(AWSid, AWSPW);
    }
 	
    @Bean
