@@ -1,4 +1,4 @@
-package Eric.Gilseob.Kim.Controller;
+/*package Eric.Gilseob.Kim.Controller;
 
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 import org.springframework.context.annotation.Bean;
@@ -44,4 +44,4 @@ public class ApplicationConfig {
    public AmazonS3 s3client() {
  	return new AmazonS3Client(credential()); 
    }
-}
+}*/
